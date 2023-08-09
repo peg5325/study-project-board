@@ -46,11 +46,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class ArticleControllerTest {
 
     private final MockMvc mvc;
+
     private final FormDataEncoder formDataEncoder;
 
     @MockBean private ArticleService articleService;
     @MockBean private PaginationService paginationService;
 
+    
     public ArticleControllerTest(
             @Autowired MockMvc mvc,
             @Autowired FormDataEncoder formDataEncoder
